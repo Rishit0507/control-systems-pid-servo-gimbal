@@ -70,15 +70,6 @@ Simulation generates step response, Bode plot, root locus, and PD vs PID compari
 - **Hardware Debugging** - Power isolation, servo calibration, axis decoupling
 - **Data Analysis** - Live serial logging and MSE-based performance comparison
 
-## Quick Setup
-
-1. Install Arduino IDE and required libraries — MPU6050 (Electronic Cats), PID_v1 (Brett Beauregard)
-2. Wire MPU6050 to A4/A5, servos to D9/D10, power servos from external 5V
-3. Connect buck converter GND to Arduino GND
-4. Upload `gimbal_main.ino` and open Serial Plotter to verify pitch and roll angles
-5. Run `matlab/simulation.m` for transfer function graphs
-6. Run `matlab/data_logging.m` to capture live hardware data
-
 ## Troubleshooting
 
 | Problem | Cause | Fix |
